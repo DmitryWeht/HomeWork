@@ -1,0 +1,11 @@
+   0 mkdir -p /opt/test/dmitry
+   1 cat readme.txt >> /opt/test/dmitry/test.txt
+   2 cat /opt/test/dmitry/test.txt
+   3 ps -ef | head -2 >> /opt/test/dmitry/test.txt
+   4 mkdir -p /tmp/test2/dmitry2
+   5 mv /opt/test/dmitry/test.txt /tmp/test2/dmitry2/new2.txt
+   6 vi /tmp/test2/dmitry2/new2.txt
+   7 cat /tmp/test2/dmitry2/new2.txt
+   8 history
+   9 history > history2.txt
+  10 export_file history2.txt
