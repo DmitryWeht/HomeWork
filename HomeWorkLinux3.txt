@@ -1,0 +1,6 @@
+USER="Weht"
+echo "Сегодняшняя дата: $(date)"
+echo "Привет, $USER!"
+echo "Работаем из директории: $(pwd)"
+process_count=$(ps -ef | wc -l)
+echo "Количество процессов: $((process_count - 1))"
