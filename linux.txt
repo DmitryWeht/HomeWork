@@ -1,0 +1,14 @@
+for ((i=1; i<=10; i++)); do
+  echo "$(date +"%H:%M:%S") $(ps -ef | wc -l)"
+
+sleep 5
+done
+
+
+cat /proc/cpuinfo > cpu_info.txt
+
+cat /etc/os-release | grep NAME > os_info.txt
+cat /etc/os-release | grep NAME | awk '{print $NF}' | cut -d '"' -f2 > os_name.txt
+
+
+for ((i=50; i<=100; i++)); do touch "${i}.txt"; done
